@@ -20,7 +20,7 @@
 ### boot init $name :
     Write config file, you need to edit it with your own values.
     args:
-        -i enter in interactive mode to make config file faster.
+        -i enter in interactive mode to write config file faster.
 ### boot shutdown $name :
     Ping $name_ip
         packet received :
