@@ -110,6 +110,7 @@ function interactive_conf() {
 
 function write() {
 	interactive="$2"
+	path="$3"
 	if [[ "$interactive" == 1 ]]; then
 		conf=""
 		interactive_conf $1 conf
@@ -140,7 +141,7 @@ function make_conf() {
 	fi
 
 	if [[ "$write" == 1 ]]; then
-		write $1 $interactive
+		write $1 $interactive $path
 	fi
 }
 
@@ -191,9 +192,7 @@ if [[ $# -eq 1 ]]; then
 	# Start waiting for dist is available
 	connect 1 _ping _ssh null "$max_try"
 	echo -E ''
-	exit 0
 else
 	name_is_missing
 fi
-
-
+exit 0
