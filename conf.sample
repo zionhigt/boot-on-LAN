@@ -1,0 +1,12 @@
+@@NAME@@_mac=00:00:00:00:00:00 # Hardware address for wake on lan
+@@NAME@@_ip= # IP address for connection tests
+ssh_client= # username@host || ssh config aliase
+
+# Default configuration variables can be overwritten
+
+# How many ping request sent for each trying
+# ping_count=1
+
+# Max trying before exit. Increment it according to your machine boot time.
+# Turn it to 0 if you just need wol feature
+max_try=20
